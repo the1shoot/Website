@@ -10,9 +10,7 @@ function scrolling(){
     var scrollInterval = setInterval(function() {
         window.scrollBy(0, 5);
         if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-          clearInterval(scrollInterval);
-        }
-      }, 15);
+          clearInterval(scrollInterval)}}, 15);
 }
 
 uber.addEventListener('click', function(){window.location.href = "index.html"}); 
