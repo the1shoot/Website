@@ -17,7 +17,7 @@ body {
     transition: background-color 2s ease;
 }
 .change1{
-    background-color: #98FB98;
+    background-color: #FFA07A;
 }
 .change2{
     background-color: #00BFFF;
@@ -25,6 +25,7 @@ body {
 .change3{
     background-color: bisque;
 }
+/* ------------------------------------ */
 .horizontal-box {
     display: flex; 
     justify-content: space-between; 
