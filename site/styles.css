@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'helv';
+    src: url('fonts/Helvetica.ttf');
+  }
+
+@font-face {
+    font-family: 'helv-bold';
+    src: url('fonts/Helvetica-Bold.ttf');
+  }
+
+
 /* ------------------------------------ */
 @media only screen and (max-width: 800px) {
     .horizontal-box1 button{
@@ -80,7 +91,7 @@ body {
 .mainBtn{
     height: 75px;
     width: 30%;
-    font: 22px Helvetica, Arial, sans-serif;
+    font: 22px 'helv', sans-serif;
     border-radius: 30px;
     background-color: #98FB98;
     cursor: pointer;
@@ -97,7 +108,7 @@ body {
 .themain{
     height: 90px;
     width: 30%;
-    font: 30px Helvetica, Arial, sans-serif, bold;
+    font: 30px 'helv-bold', sans-serif, bold;
     border-radius: 30px;
     background-color: #86e086;
     cursor: pointer;
@@ -136,7 +147,7 @@ body {
 
 .main{
     padding: 20px;
-    font: 24px Helvetica, Arial, sans-serif; 
+    font: 24px 'helv', sans-serif; 
 }
 ul {
     list-style-type: disc;
