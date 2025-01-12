@@ -15,3 +15,25 @@ zuGal.addEventListener('click', function(){window.location.href = "Galerie.html"
 galerie.addEventListener('click', function(){window.location.href = "Galerie.html"})
 
 
+// Video
+
+document.addEventListener("DOMContentLoaded", () => {
+  const previewVideo = document.getElementById("preview-video");
+  const fullscreenContainer = document.getElementById("fullscreen-container");
+  const fullscreenVideo = document.getElementById("fullscreen-video");
+  const closeBtn = document.getElementById("close-btn");
+
+// Fullscreen
+  previewVideo.addEventListener("click", () => {
+    fullscreenContainer.classList.remove("hidden");
+    fullscreenVideo.currentTime = previewVideo.currentTime; 
+    fullscreenVideo.play();
+  });
+
+// Close
+  closeBtn.addEventListener("click", () => {
+    fullscreenContainer.classList.add("hidden");
+    previewVideo.currentTime = fullscreenVideo.currentTime; 
+    fullscreenVideo.pause();
+  });
+});
